@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
 } from "react-native-gesture-handler";
 import SingleLoanUpperGrid from "../components/SingleLoanUpperGrid";
-const SingleLoanScreen = (props: any) => {
+const SingleLoanComponent = (props: any) => {
   const loanData = props.loanData;
   const navigation = props.navigation;
   const theme = useColorScheme();
@@ -212,4 +212,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SingleLoanScreen;
+export default SingleLoanComponent;

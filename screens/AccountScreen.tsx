@@ -3,19 +3,17 @@ import React, { useState, useEffect } from "react";
 import {
   StyleSheet,
   ActivityIndicator,
-  Text,
   Animated,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from "react-native";
-import { FlatList } from "react-native-gesture-handler";
-import { ILoan, RootStackParamList } from "../types";
+import { RootStackParamList } from "../types";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { getLoans } from "../services/loan.service";
 import Colors from "../constants/Colors";
 import { View } from "../components/Themed";
 import Layout from "../constants/Layout";
-import SingleLoanScreen from "./SingleLoanScreen";
+import SingleLoanComponent from "./SingleLoanComponent";
 const AccountScreen = ({
   navigation,
 }: StackScreenProps<RootStackParamList, "Account">) => {
@@ -89,7 +87,7 @@ const AccountScreen = ({
               height: "auto",
             }}
           >
-            <SingleLoanScreen loanData={item} navigation={navigation} />
+            <SingleLoanComponent loanData={item} navigation={navigation} />
           </View>
         )}
       />
