@@ -13,7 +13,8 @@ import { getLoans } from "../services/loan.service";
 import Colors from "../constants/Colors";
 import { View } from "../components/Themed";
 import Layout from "../constants/Layout";
-import SingleLoanComponent from "./SingleLoanComponent";
+import SingleLoanComponent from "../components/SingleLoanComponent";
+
 const AccountScreen = ({
   navigation,
 }: StackScreenProps<RootStackParamList, "Account">) => {
